@@ -15,10 +15,12 @@ export default (props) => {
                 Add Employee
             </button>
             <article className="employeeList">
-                return {employees.map(employee => {
+                {employees.map(employee => {
                     const clinic = locations.find(c => c.id === employee.locationId)
                     
-                    return <Employee key={employee.id} employee={employee} location={clinic} />
+                    return <Employee key={employee.id} 
+                                    employee={employee} 
+                                    location={clinic} />
                 })}
             </article>
         </div>
