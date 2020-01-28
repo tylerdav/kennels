@@ -21,16 +21,14 @@ export default (props) => {
             <div className="animal__breed">Breed: {animal.breed}</div>
             <div className="animal__location">Location: {location.name}</div>
             <div className="animal__owner">Customer: {customer.name}</div>
-            <button onClick={
-                () => {
-                    releaseAnimal(animal)
+            <button className="btn--release"
+                onClick={() => {
+                    releaseAnimal(chosenAnimalId)
                         .then(() => {
                             props.history.push("/animals")
-                        })
-                }
-            }>
-                Release Animal
-            </button>
+                    })
+                }}
+            >Release</button>
         </section>
     )
 }
