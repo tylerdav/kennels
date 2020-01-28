@@ -1,3 +1,4 @@
+
 import React, { useContext, useRef } from "react"
 import { AnimalContext } from "./AnimalProvider"
 import { LocationContext } from "../location/LocationProvider"
@@ -81,7 +82,7 @@ export default props => {
                     }
                 }
                 className="btn btn-primary">
-                Make Reservation
+                Make Appointment
             </button>
         </form>
     )
